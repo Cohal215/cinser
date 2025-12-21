@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #545454;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    margin: 2rem auto;
+    display: block;
+}
+.btn-menu {
+    width: 50%;
+    margin: 1rem auto;
+}
+.btn-titulo {
+    width: 900px;
+    max-width: 90%;
+    margin: 1rem auto;
+}
+.btn-volver {
+    width: 100px;
+    margin: 1rem auto;
+}
+a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #8d8d8d;
+    text-decoration: none;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: all .2s;
+}
+a:hover, .scroll-btn:hover {
+    background-color: #c5c5c5;
+    color: #545454;
+    scale: .95;
+}
+.btn-titulo a {
+    padding: 1rem;
+}
+.btn-volver a {
+    padding: 1rem;
+}
+.btn-anos-container {
+    width: 900px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.btn-anos-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+}
+.btn-anos-scroll::-webkit-scrollbar {
+    display: none; /* Chrome y Safari */
+}
+.btn-anos-scroll a {
+    padding: 1rem;
+    font-size: 1rem;
+}
+.scroll-btn {
+    background: #8d8d8d;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.aqui {
+    background-color: #6a6a6a;
+}
+@media (max-width: 768px) {
+    .btn-menu {
+        width: 80%;
+    }
+    .btn-titulo {
+        width: 80%;
+    }
+    .btn-volver {
+        width: 30%;
+    }
+    .btn-anos-container {
+        width: 80%;
+    }
+}

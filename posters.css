@@ -1,0 +1,91 @@
+.posters {
+    width: 900px;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+.posters {
+    border-top: 2px solid #8d8d8d;
+    border-bottom: 2px solid #8d8d8d;
+    padding: 1rem 0;
+    border-radius: 10px;
+}
+.posters img {
+    border-radius: 10px;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all .1s;
+    cursor: pointer;
+    width: 17%;
+    height: auto;
+    display: block;
+}
+.posters img:hover {
+    scale: 1.05;
+}
+@media (max-width: 768px) {
+    .posters img {
+        width: 30%;
+    }
+    .posters {
+        gap: .5rem;
+    }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal img {
+    max-width: 85vw;
+    max-height: 80vh;
+    animation: zoom 0.3s ease;
+    touch-action: pan-y;
+    border-radius: 10px;
+}
+
+/* Animación */
+@keyframes zoom {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fundidoR {
+    from {
+        opacity: .5;
+        transform: translateX(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fundidoL {
+    from {
+        opacity: .5;
+        transform: translateX(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
